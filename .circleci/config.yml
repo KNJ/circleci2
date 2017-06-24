@@ -1,9 +1,9 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/<project root directory>
+    working_directory: ~/
     docker:
-      - image: circleci/<language>:<version TAG>
+      - image: circleci/php:7.1.4
     steps:
       - checkout
       - run: echo "hello world"
