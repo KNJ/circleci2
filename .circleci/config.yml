@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circleci2
     docker:
-      - image: circleci/php:7.1.4
+      - image: indiehosters/git
     steps:
       - checkout
-      - run: echo "hello world"
+      - run: git clone https://github.com/laradock/laradock.git
