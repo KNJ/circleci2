@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circleci2
     docker:
-      - image: docker/compose
+      - image: docker/compose:1.14.0
     steps:
       - checkout
       - run:
